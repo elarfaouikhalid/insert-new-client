@@ -1,19 +1,5 @@
 <?php 
 $con = mysqli_connect('localhost', 'root', '', 'function');
-// $dsn='mysqli:host:localhost;dbname:view';
-// $username='root';
-// $password='';
-// try
-// {
-//     $con=new PDO($dsn,$username,$password);
-//     $con->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-// }
-// catch(Exeption $ex)
-// {
-//     echo 'not found'.$ex->getMessage();
-// }
-
-// $connection = mysqli_connect('localhost', 'root', '', 'function');
 if(isset($_POST['insert'])){
 $user=$_POST['user'];
 $email=$_POST['email'];
